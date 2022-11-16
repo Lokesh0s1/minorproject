@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Best Online Food Site | MyFoodhub.com</title>
+  <link rel="stylesheet" href="mp.css">
+  <link rel="stylesheet" href="about.css">
+  
+</head>
+
+<body>
+  <nav id="navbar">
+    <div id="logo">
+      <img src="logo1.jpg" alt="MyFoodhub.com">
+    </div>
+    <ul>
+      <li class="item"><a href="#home">Home</a></li>
+      <li class="item"> <a href="#services">Services</a></li>
+      <li class="item"><a href="./about.html">About Us</a></li>
+      <li class="item"><a href="#contact">Contact Us</a> </li>
+
+    </ul>
+  </nav>
+  <section id="form" data-aos="fade-up">
+    <div class="container">
+      <h3 class="form__title">Book Table</h3>
+      <div class="form__wrapper">
+        <form name="booking" method="POST" netlify>
+          <div class="form__group">
+            <label for="firstName">First Name <br> </label>
+            <input type="text" id="firstName" name="First Name" required>
+          </div>
+          <div class="form__group">
+            <label for="lastName">Last Name <br> </label>
+            <input type="text" id="lastName" name="Last Name" required>
+          </div>
+          <div class="form__group">
+            <label for="email">Email <br> </label>
+            <input type="email" id="email" name="Email" required>
+          </div>
+          <div class="form__group">
+            <label for="tableType">Table Type <br></label>
+        <select name="Table Type" id="tableType" required>
+          <option selected disabled>Choose</option>
+          <option value="small">Small(2 persons)</option>
+          <option value="medium">Small(4 persons)</option>
+          <option value="large">large(6 persons)</option>
+        </select>
+          </div>
+          <div class="form__group">
+            <label for="guestNumber">Guest Number <br></label>
+            <input type="number" id="guestNumber" name="Guest Number" min="1" max="10" required>
+          </div>
+          <div class="form__group">
+            <label for="placement">Placement <br></label>
+            <select name="Placement" id="placement">
+              <option selected disabled>Choose</option>
+              <option value="outdoor">Outdoor</option>
+              <option value="indoor">Indoor</option>
+              <option value="rooftop">rooftop</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label for="date">Date <br></label>
+            <input type="date" id="date" name="Date" required>
+          </div>
+          <div class="form__group form__group__full">
+            <label for="note">Note <br></label>
+            <textarea name="Note" id="note" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn primary-btn">Book Table</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+</html>
